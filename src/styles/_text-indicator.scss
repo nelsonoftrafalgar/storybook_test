@@ -1,0 +1,22 @@
+.text-indicator-wrapper {
+	width: 60px;
+	height: 30px;
+	border-radius: 50px;
+	background: linear-gradient(348deg, #504f52, #000000) border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-indicator-text {
+	background-color: #413641;
+	color: #05defc;
+	border-radius: 50px;
+	width: 54px;
+	height: 26px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	font-weight: 500;
+}
