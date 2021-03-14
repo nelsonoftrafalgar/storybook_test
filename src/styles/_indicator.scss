@@ -1,0 +1,65 @@
+.light-indicator {
+	padding: 10px 15px;
+	border-radius: $border-radius;
+	color: $turquoise;
+	background: #1e1e1f;
+	box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -3px 10px -1px #5a485aed inset,
+		-2px -2px 3px 2px #5d9498;
+    font-weight: 500;
+
+	&.on {
+        color: #1e1e1f;
+		box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -2px 3px 2px #5d9498;
+		background: $turquoise;
+
+        .light-indicator-icon {
+            filter: brightness(0%)
+        }
+	}
+
+    &.icon {
+        width: 60px;
+        @include flex-center;
+    }
+
+    .light-indicator-icon {
+        width: 20px;
+    }
+}
+
+.percent-indicator-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: $cirlce-border-radius;
+    background: $indicator-border-bg;
+    @include flex-center;
+}
+
+.percent-indicator-text {
+    background-color: $purple-bg;
+    color: #8854f7;
+    border-radius: $cirlce-border-radius;
+    width: 34px;
+    height: 34px;
+    font-size: 7px;
+    font-weight: 500;
+    @include flex-center;
+}
+
+.text-indicator-wrapper {
+	width: 70px;
+	height: 40px;
+	border-radius: $border-radius;
+	background: $indicator-border-bg;
+	@include flex-center;
+}
+
+.text-indicator-text {
+	background-color: $purple-bg;
+	color: $turquoise;
+	border-radius: $border-radius;
+	width: 64px;
+	height: 34px;
+	font-weight: 500;
+	@include flex-center;
+}

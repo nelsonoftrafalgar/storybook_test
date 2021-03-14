@@ -1,4 +1,5 @@
 @import 'global.scss';
+@import 'variables.scss';
+@import 'mixins';
 
-@import 'percent-indicator.scss';
-@import 'text-indicator.scss';
+@import 'indicator.scss';
