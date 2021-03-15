@@ -1,0 +1,88 @@
+.timer-wrapper {
+	width: 90px;
+	height: 90px;
+	border-radius: $cirlce-border-radius;
+	background: $indicator-border-bg;
+	@include flex-center;
+}
+
+.timer-progress {
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	background: #29292a;
+	background-image: linear-gradient(to right, transparent 50%, $font-color-purple 0);
+    position: relative;
+    overflow: hidden;
+    animation: gradient;
+	animation-delay: 15s;
+	animation-fill-mode: forwards;
+
+	&::before {
+		content: '';
+		display: block;
+		margin-left: 50%;
+		height: 100%;
+		border-radius: 0 100% 100% 0 / 50%;
+		background: $font-color-purple;
+		transform-origin: left;
+        animation: spin 30s linear;
+        animation-fill-mode: forwards;
+	}
+}
+
+.timer-half {
+	width: 42px;
+	height: 84px;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	animation: masking;
+	animation-delay: 15s;
+	animation-fill-mode: forwards;
+}
+
+.timer-cap {
+	width: 80px;
+	height: 80px;
+	background: #303031;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	box-shadow: 0px -2px 1px 1px #1e1c1eed inset;
+	@include flex-center;
+}
+
+.timer-count {
+	font-size: 18px;
+	font-weight: 500;
+	color: $font-color-light;
+}
+
+.timer-unit {
+	font-size: 15px;
+	color: $font-color-dark;
+	margin-left: 5px;
+}
+
+@keyframes masking {
+	to {
+		background: #29292a;
+	}
+}
+
+@keyframes gradient {
+	to {
+		background-image: none;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(180deg);
+	}
+	to {
+		transform: rotate(-180deg);
+	}
+}
