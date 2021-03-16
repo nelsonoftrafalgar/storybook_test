@@ -27,7 +27,7 @@
     }
 }
 
-.percent-indicator-wrapper {
+.percent-indicator-wrapper, .track-indicator-wrapper {
     width: 40px;
     height: 40px;
     border-radius: $circle-border-radius;
@@ -35,7 +35,7 @@
     @include flex-center;
 }
 
-.percent-indicator-text {
+.percent-indicator-text, .track-indicator-text {
     background-color: $purple-bg;
     color: $font-color-purple;
     border-radius: $circle-border-radius;
@@ -44,6 +44,12 @@
     font-size: 7px;
     font-weight: 500;
     @include flex-center;
+}
+
+.track-indicator-text {
+    color: $turquoise;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .text-indicator-wrapper {
