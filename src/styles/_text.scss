@@ -1,0 +1,49 @@
+.text {
+	&.light {
+		color: $font-color-light;
+	}
+
+	&.dark {
+		color: $font-color-dark;
+	}
+
+	&.turquoise {
+		color: $turquoise;
+	}
+
+	&.xs {
+		font-size: 5px;
+	}
+
+	&.s {
+		font-size: 10px;
+	}
+
+	&.m {
+		font-size: 15px;
+	}
+
+	&.l {
+		font-size: 20px;
+	}
+
+	&.xl {
+		font-size: 25px;
+	}
+
+	&.thin {
+		font-weight: 300;
+	}
+
+    &.regular {
+		font-weight: 400;
+	}
+
+    &.bold {
+		font-weight: 500;
+	}
+
+    &.fat {
+		font-weight: 600;
+	}
+}
