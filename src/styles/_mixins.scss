@@ -3,3 +3,16 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin button-wrapper {
+    border-radius: $circle-border-radius;
+    background: $button-border-bg;
+    box-shadow: $button-shadow;
+    @include flex-center;
+}
+
+@mixin button-face {
+    border-radius: $circle-border-radius;
+    background: $button-face-bg;
+    @include flex-center;
+}
