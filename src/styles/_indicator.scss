@@ -30,7 +30,7 @@
 .percent-indicator-wrapper {
     width: 40px;
     height: 40px;
-    border-radius: $cirlce-border-radius;
+    border-radius: $circle-border-radius;
     background: $indicator-border-bg;
     @include flex-center;
 }
@@ -38,7 +38,7 @@
 .percent-indicator-text {
     background-color: $purple-bg;
     color: $font-color-purple;
-    border-radius: $cirlce-border-radius;
+    border-radius: $circle-border-radius;
     width: 34px;
     height: 34px;
     font-size: 7px;

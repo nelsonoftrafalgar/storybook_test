@@ -1,7 +1,7 @@
 .timer-wrapper {
 	width: 90px;
 	height: 90px;
-	border-radius: $cirlce-border-radius;
+	border-radius: $circle-border-radius;
 	background: $indicator-border-bg;
 	@include flex-center;
 }
