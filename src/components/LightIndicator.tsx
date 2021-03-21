@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Icon from './Icon'
 import classNames from 'classnames'
 
 export interface ILightIndicatorProps {
@@ -10,7 +11,7 @@ export interface ILightIndicatorProps {
 const LightIndicator: FC<ILightIndicatorProps> = ({text, on, icon}) => {
     return (
         <span className={classNames('light-indicator', {on, icon})}>
-            {icon ? <img className='light-indicator-icon' src={icon} alt=""/> : text}
+            {icon ? <Icon className='light-indicator-icon' src={icon}/> : text}
         </span>
     )
 }
