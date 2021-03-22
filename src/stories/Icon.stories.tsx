@@ -7,6 +7,7 @@ import fast_forward from '../assets/icons/fast_forward.svg'
 import gear from '../assets/icons/gear.svg'
 import lines from '../assets/icons/lines.svg'
 import looking_glass from '../assets/icons/looking_glass.svg'
+import marshall from '../assets/icons/marshall.svg'
 import minus from '../assets/icons/minus.svg'
 import ok from '../assets/icons/ok.svg'
 import pause from '../assets/icons/pause.svg'
@@ -115,4 +116,9 @@ SlowBackward.args = {
 export const Toast = Template.bind({})
 Toast.args = {
 	src: toast,
+}
+
+export const Marshall = Template.bind({})
+Marshall.args = {
+	src: marshall,
 }

@@ -1,0 +1,76 @@
+.speaker-wrapper {
+	border: 1px solid $speaker-gray;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+
+	&.small {
+		padding: 5px;
+		width: 45px;
+		height: 55px;
+		border-radius: 10px;
+	}
+
+	&.large {
+		padding: 10px;
+		width: 65px;
+		height: 80px;
+		border-radius: 15px;
+	}
+
+	&.long {
+		justify-content: space-around;
+		padding: 5px;
+		width: 35px;
+		height: 110px;
+		border-radius: 10px;
+	}
+
+	.circle-small {
+		width: 8px;
+		height: 8px;
+		border-radius: $circle-border-radius;
+		border: 1px solid $speaker-gray;
+	}
+
+	.circle-large {
+		width: 20px;
+		height: 20px;
+		border-radius: $circle-border-radius;
+		border: 1px solid $speaker-gray;
+	}
+}
+
+.speaker-button {
+	border-radius: $circle-border-radius;
+	border: 1px solid $speaker-gray;
+	background-color: transparent;
+	@include flex-center;
+
+	&.small {
+		margin-top: 10px;
+		width: 20px;
+		height: 20px;
+	}
+
+	&.large {
+		margin-top: 12px;
+		width: 30px;
+		height: 30px;
+	}
+
+	&.long {
+		margin-top: 0;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.speaker-icon {
+	filter: invert(52%) sepia(8%) saturate(176%) hue-rotate(169deg) brightness(93%) contrast(84%);
+
+	&.on {
+		filter: none;
+	}
+}
