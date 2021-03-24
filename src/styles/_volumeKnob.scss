@@ -1,0 +1,75 @@
+.volume-knob-wrapper {
+	width: 200px;
+	height: 200px;
+	border-radius: $circle-border-radius;
+	box-shadow: $button-shadow;
+	background: linear-gradient(140deg, #5e5c60, #38333d) border-box;
+	@include flex-center;
+    position: relative;
+}
+
+.volume-knob-inner-wrapper {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+	width: 190px;
+	height: 190px;
+	border-radius: $circle-border-radius;
+	background: $indicator-border-bg;
+	@include flex-center;
+}
+
+.volume-knob-face {
+	width: 185px;
+	height: 185px;
+	border-radius: $circle-border-radius;
+	background: $purple-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volume-knob-progress {
+	--progress: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: linear-gradient(140deg, #5e5c60, #38333d) border-box;
+	background-image: linear-gradient(to right, transparent 50%, $font-color-purple 0);
+	position: relative;
+	overflow: hidden;
+
+	&.hide-half {
+		background-image: none;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		margin-left: 50%;
+		height: 100%;
+		border-radius: 0 100% 100% 0 / 50%;
+		background: $font-color-purple;
+		transform-origin: left;
+		transform: rotate(var(--progress));
+	}
+}
+
+.volume-knob-half {
+	width: 100px;
+	height: 200px;
+	background: transparent;
+	position: absolute;
+	top: 0;
+
+	&.mask {
+		background: linear-gradient(157deg, #5e5c60, #403947) border-box;
+	}
+}
+
+.volume-knob-button {
+    background: transparent;
+    @include flex-center;
+    margin: 10px;
+    cursor: pointer;
+}
