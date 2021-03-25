@@ -1,0 +1,17 @@
+.tile-wrapper {
+	--width: 0;
+	width: var(--width);
+	border-radius: 5px;
+	padding: 10px;
+	background: $tile-wrapper-bg;
+	box-shadow: $tile-wrapper-shadow;
+	@include flex-center;
+
+	&.light {
+		background: $tile-wrapper-light-bg;
+	}
+
+	&.dark {
+		background: $tile-wrapper-dark-bg;
+	}
+}
