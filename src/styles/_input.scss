@@ -1,0 +1,17 @@
+.input-wrapper {
+    width: 200px;
+    background: $input-bg;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: $input-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .input {
+        width: 80%;
+        background: $input-bg;
+        color: $font-color-light;
+        outline: none;
+    }
+}

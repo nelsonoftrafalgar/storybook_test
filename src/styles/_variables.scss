@@ -5,6 +5,7 @@ $font-color-dark: #76797b;
 $font-color-purple: #8854f7;
 $speaker-gray: #7a7d80;
 $tile-wrapper-bg: #393d42;
+$input-bg: #453245;
 
 $indicator-border-bg: linear-gradient(348deg, #504f52, #000000) border-box;
 $button-border-bg: linear-gradient(325deg, #27292c, #4a4c4d) border-box;
@@ -13,6 +14,7 @@ $progress-bar-bg: linear-gradient(90deg, #238391, $turquoise) border-box;
 $tile-wrapper-light-bg: linear-gradient(130deg, #676f74, #2e222f) border-box;
 $tile-wrapper-dark-bg: linear-gradient(90deg, #3f4349, #1a1c1f) border-box;
 
+$input-shadow: 3px 3px 5px 1px #2b1f2bed inset, -2px -2px 7px 0px #5b8d91 inset;
 $button-shadow: 7px 11px 9px 0px #2b1f2bed, -3px -5px 9px 0px #5b8d91;
 $tile-wrapper-shadow: 5px 5px 6px 2px #282228ed;
 
