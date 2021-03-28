@@ -1,16 +1,16 @@
 .colon-wrapper {
-    width: 10px;
-    height: 40px;
-    flex-direction: column;
-    @include flex-center;
+	width: 10px;
+	height: 40px;
+	flex-direction: column;
+	@include flex-center;
 }
 
 .colon {
-    width: 10px;
-    height: 10px;
-    border-radius: $circle-border-radius;
-    box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -2px 3px 2px #5d9498;
-    background: #303031;
-    border: 1px solid #58575e;
-    margin: 5px 0;
+	width: 6px;
+	height: 6px;
+	border-radius: $circle-border-radius;
+	box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -2px 3px 0px #5d9498;
+	background: #303031;
+	border: 1px solid #58575e;
+	margin: 2px 0;
 }

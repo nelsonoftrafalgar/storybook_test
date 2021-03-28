@@ -24,7 +24,7 @@ const VolumeKnob: FC = () => {
 					>
 						<Icon width='10' src={minus} />
 					</button>
-					<Icon width='70' src={lines} />
+					<Icon width='45' src={lines} />
 					<button
 						className='volume-knob-button'
 						onClick={() => progress < 540 && setProgress(progress + 10)}

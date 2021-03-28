@@ -1,18 +1,18 @@
 .progress-bar-wrapper {
-    --maxProgress: 0;
-    width: var(--maxProgress);
-    height: 6px;
-    border: 1px solid #000000;
-    border-radius: 50px;
-    background: #000000;
-    display: flex;
-    align-items: center;
+	--maxProgress: 0;
+	width: var(--maxProgress);
+	height: 4px;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	background: #000000;
+	display: flex;
+	align-items: center;
 }
 
 .progress-bar-progress {
-    --currentProgress: 0;
-    width: var(--currentProgress);
-    height: 4px;
-    background: $progress-bar-bg;
-    border-radius: 50px;
+	--currentProgress: 0;
+	width: var(--currentProgress);
+	height: 3px;
+	background: $progress-bar-bg;
+	border-radius: 50px;
 }

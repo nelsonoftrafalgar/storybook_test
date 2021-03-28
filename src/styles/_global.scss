@@ -7,3 +7,37 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif !important;
 }
+
+#root {
+	background: linear-gradient(180deg, #494d52, #1a1d21) border-box;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.middle-section {
+	padding-top: 90px;
+}
+
+.middle-section-text-wrapper {
+	padding-top: 60px;
+}
+
+$margins: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60;
+
+@each $margin in $margins {
+	.m-bottom-#{$margin} {
+		margin-bottom: #{$margin}px;
+	}
+
+	.m-top-#{$margin} {
+		margin-top: #{$margin}px;
+	}
+
+	.m-left-#{$margin} {
+		margin-left: #{$margin}px;
+	}
+
+	.m-right-#{$margin} {
+		margin-right: #{$margin}px;
+	}
+}

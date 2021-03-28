@@ -1,18 +1,12 @@
-import {CSSProperties, FC} from 'react'
-
+import { FC } from 'react'
 import classNames from 'classnames'
 
 export interface ITileWrapperProps {
-    gradient?: 'light' | 'dark'
-    width: string
+	gradient?: 'light' | 'dark'
 }
 
-const TileWrapper: FC<ITileWrapperProps> = ({gradient, children, width}) => {
-    return (
-        <div style={{'--width': `${width}px`} as CSSProperties} className={classNames('tile-wrapper', gradient)}>
-            {children}
-        </div>
-    )
+const TileWrapper: FC<ITileWrapperProps> = ({ gradient, children }) => {
+	return <div className={classNames('tile-wrapper', gradient)}>{children}</div>
 }
 
 export default TileWrapper

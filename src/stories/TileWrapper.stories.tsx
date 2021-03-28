@@ -16,6 +16,3 @@ const Template: Story<ITileWrapperProps> = (args) => (
 )
 
 export const Default = Template.bind({})
-Default.args = {
-    width: '30'
-}
