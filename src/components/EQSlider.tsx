@@ -3,11 +3,11 @@ import { FC, useState } from 'react'
 import Slider from 'react-rangeslider'
 
 export interface IEQSliderProps {
-  max: number
+	max: number
 }
 
-const EQSlider: FC<IEQSliderProps> = ({max}) => {
-	const [value, setValue] = useState(1)
+const EQSlider: FC<IEQSliderProps> = ({ max }) => {
+	const [value, setValue] = useState(10)
 
 	return (
 		<Slider

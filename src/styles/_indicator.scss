@@ -5,51 +5,54 @@
 	background: #1e1e1f;
 	box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -3px 10px -1px #5a485aed inset,
 		-2px -2px 3px 2px #5d9498;
-    font-weight: 500;
+	font-weight: 500;
+	font-size: 12px;
 
 	&.on {
-        color: #1e1e1f;
+		color: #1e1e1f;
 		box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -2px 3px 2px #5d9498;
 		background: $turquoise;
 
-        .light-indicator-icon {
-            filter: brightness(0%)
-        }
+		.light-indicator-icon {
+			filter: brightness(0%);
+		}
 	}
 
-    &.icon {
-        width: 60px;
-        @include flex-center;
-    }
+	&.icon {
+		width: 60px;
+		@include flex-center;
+	}
 
-    .light-indicator-icon {
-        width: 20px;
-    }
+	.light-indicator-icon {
+		width: 20px;
+	}
 }
 
-.percent-indicator-wrapper, .track-indicator-wrapper {
-    width: 40px;
-    height: 40px;
-    border-radius: $circle-border-radius;
-    background: $indicator-border-bg;
-    @include flex-center;
+.percent-indicator-wrapper,
+.track-indicator-wrapper {
+	width: 40px;
+	height: 40px;
+	border-radius: $circle-border-radius;
+	background: $indicator-border-bg;
+	@include flex-center;
 }
 
-.percent-indicator-text, .track-indicator-text {
-    background-color: $purple-bg;
-    color: $font-color-purple;
-    border-radius: $circle-border-radius;
-    width: 34px;
-    height: 34px;
-    font-size: 7px;
-    font-weight: 500;
-    @include flex-center;
+.percent-indicator-text,
+.track-indicator-text {
+	background-color: $purple-bg;
+	color: $font-color-purple;
+	border-radius: $circle-border-radius;
+	width: 34px;
+	height: 34px;
+	font-size: 7px;
+	font-weight: 500;
+	@include flex-center;
 }
 
 .track-indicator-text {
-    color: $turquoise;
-    font-size: 12px;
-    font-weight: 600;
+	color: $turquoise;
+	font-size: 12px;
+	font-weight: 600;
 }
 
 .text-indicator-wrapper {
@@ -61,6 +64,7 @@
 }
 
 .text-indicator-text {
+	font-size: 12px;
 	background-color: $purple-bg;
 	color: $turquoise;
 	border-radius: $border-radius;

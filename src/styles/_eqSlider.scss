@@ -1,5 +1,5 @@
 .rangeslider {
-	margin: 20px 0;
+	margin: 10px 0;
 	position: relative;
 	background: #10314a;
 	-ms-touch-action: none;
@@ -11,9 +11,9 @@
 }
 
 .rangeslider-vertical {
-	height: 150px;
+	height: 100px;
 	width: 6px;
-    border-radius: 50px;
+	border-radius: 50px;
 	background: #292c2e;
 	border: 1px solid #000000;
 }
@@ -28,11 +28,11 @@
 	background-color: $turquoise;
 	box-shadow: none;
 	bottom: 0;
-    border-radius: 50px;
+	border-radius: 50px;
 }
 
 .rangeslider-vertical .rangeslider__handle {
-    width: 10px;
+	width: 10px;
 	height: 10px;
 	border-radius: $circle-border-radius;
 	background: $turquoise;

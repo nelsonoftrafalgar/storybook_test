@@ -11,10 +11,11 @@
 #root {
 	background: linear-gradient(180deg, #494d52, #1a1d21) border-box;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
-.middle-section {
+.middle-section,
+.right-section {
 	padding-top: 90px;
 }
 

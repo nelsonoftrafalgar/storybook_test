@@ -6,12 +6,13 @@ import classNames from 'classnames'
 export interface ISpeakerProps {
 	text?: string
 	size: 'small' | 'large' | 'long'
+	classname?: string
 }
 
-const Speaker: FC<ISpeakerProps> = ({ text = '', size }) => {
+const Speaker: FC<ISpeakerProps> = ({ text = '', size, classname }) => {
 	if (size === 'long') {
 		return (
-			<div className={classNames('speaker-wrapper', size)}>
+			<div className={classNames('speaker-wrapper', size, classname)}>
 				<div className='circle-small' />
 				<div className='circle-large' />
 				<SpeakerButton size={size} />
@@ -20,7 +21,7 @@ const Speaker: FC<ISpeakerProps> = ({ text = '', size }) => {
 	}
 
 	return (
-		<div className={classNames('speaker-wrapper', size)}>
+		<div className={classNames('speaker-wrapper', size, classname)}>
 			<Text text={text} color='dark' size='xs' weight='regular' />
 			<SpeakerButton size={size} />
 		</div>

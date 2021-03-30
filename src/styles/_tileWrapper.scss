@@ -1,6 +1,4 @@
 .tile-wrapper {
-	// --width: 0;
-	// width: var(--width);
 	width: 100%;
 	max-width: 350px;
 	border-radius: 30px;
@@ -16,4 +14,9 @@
 	&.dark {
 		background: $tile-wrapper-dark-bg;
 	}
+}
+
+.tile-sliders {
+	width: 70px;
+	height: 70px;
 }
