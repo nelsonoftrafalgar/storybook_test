@@ -6,11 +6,12 @@ export interface ILightIndicatorProps {
 	text?: string
 	on?: boolean
 	icon?: string
+	classname?: string
 }
 
-const LightIndicator: FC<ILightIndicatorProps> = ({ text, on, icon }) => {
+const LightIndicator: FC<ILightIndicatorProps> = ({ text, on, icon, classname }) => {
 	return (
-		<span className={classNames('light-indicator', { on, icon })}>
+		<span className={classNames('light-indicator', { on, icon }, classname)}>
 			{icon ? <Icon className='light-indicator-icon' src={icon} /> : text}
 		</span>
 	)

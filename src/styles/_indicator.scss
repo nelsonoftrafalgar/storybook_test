@@ -3,15 +3,16 @@
 	border-radius: $border-radius;
 	color: $turquoise;
 	background: #1e1e1f;
-	box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -3px 10px -1px #5a485aed inset,
+	box-shadow: 4px 4px 5px 2px #2b1f2bed, -2px -3px 10px -1px #5a485aed inset,
 		-2px -2px 3px 2px #5d9498;
 	font-weight: 500;
 	font-size: 12px;
 
 	&.on {
 		color: #1e1e1f;
-		box-shadow: 3px 2px 5px 1px #2b1f2bed, -2px -2px 3px 2px #5d9498;
+		box-shadow: 4px 4px 5px 2px #2b1f2bed, -2px -2px 3px 2px #5d9498;
 		background: $turquoise;
+		font-weight: 600;
 
 		.light-indicator-icon {
 			filter: brightness(0%);
