@@ -1,21 +1,19 @@
-import Button from '../components/Button'
 import Colon from '../components/Colon'
 import EQSlider from '../components/EQSlider'
 import Icon from '../components/Icon'
 import Input from '../components/Input'
 import LightIndicator from '../components/LightIndicator'
-import PercentIndicator from '../components/PercentIndicator'
 import Speaker from '../components/Speaker'
 import Switch from '../components/Switch'
 import Text from '../components/Text'
 import TileWrapper from '../components/TileWrapper'
+import VolumeSettingsColumn from './VolumeSettingsColumn'
+import VolumeSettingsLarge from './VolumeSettingsLarge'
+import VolumeSettingsSmall from './VolumeSettingsSmall'
 import airPods from '../assets/icons/air_pods.svg'
 import marshall from '../assets/icons/marshall.svg'
-import minus from '../assets/icons/minus.svg'
 import phone from '../assets/icons/phone.svg'
-import plus from '../assets/icons/plus.svg'
 import sliders from '../assets/icons/sliders.svg'
-import speaker from '../assets/icons/speaker.svg'
 
 const RightSection = () => {
 	return (
@@ -70,28 +68,14 @@ const RightSection = () => {
 									<Speaker text='L top' size='small' classname='m-left-15' />
 									<Speaker text='R top' size='small' classname='m-left-15' />
 								</div>
-								<div className='d-flex flex-column align-items-center m-right-10'>
-									<PercentIndicator percent='50' />
-									<Icon className='m-top-10' src={speaker} />
-								</div>
-								<div className='d-flex flex-column'>
-									<Button size='small' icon={plus} classname='m-bottom-10' />
-									<Button size='small' icon={minus} />
-								</div>
+								<VolumeSettingsSmall />
 							</div>
 							<div className='d-flex m-top-10'>
 								<div className='d-flex m-right-10'>
 									<Speaker text='Speaker' size='large' classname='m-right-10' />
 									<Speaker text='Speaker' size='large' />
 								</div>
-								<div className='d-flex flex-column align-items-center justify-content-end m-right-10'>
-									<PercentIndicator percent='50' />
-									<Icon className='m-top-10' src={speaker} />
-								</div>
-								<div className='d-flex flex-column justify-content-end'>
-									<Button size='small' icon={plus} />
-									<Button size='small' icon={minus} classname='m-top-10' />
-								</div>
+								<VolumeSettingsLarge />
 							</div>
 						</div>
 						<div className='d-flex'>
@@ -99,10 +83,7 @@ const RightSection = () => {
 								<Speaker size='long' />
 							</div>
 							<div className='d-flex flex-column justify-content-end align-items-center'>
-								<Button size='small' icon={plus} classname='m-bottom-10' />
-								<Button size='small' icon={minus} classname='m-bottom-10' />
-								<PercentIndicator percent='50' />
-								<Icon className='m-top-10' src={speaker} />
+								<VolumeSettingsColumn />
 							</div>
 						</div>
 					</div>

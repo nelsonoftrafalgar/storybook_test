@@ -6,7 +6,12 @@ import lines from '../assets/icons/lines.svg'
 import minus from '../assets/icons/minus.svg'
 import plus from '../assets/icons/plus.svg'
 
-const VolumeKnob: FC = () => {
+export interface IVolumeKnobProps {
+	handleIncrement: () => void
+	handleDecrement: () => void
+}
+
+const VolumeKnob: FC<IVolumeKnobProps> = ({ handleDecrement, handleIncrement }) => {
 	const [progress, setProgress] = useState(180)
 	return (
 		<div className='volume-knob-wrapper'>
@@ -20,14 +25,24 @@ const VolumeKnob: FC = () => {
 				<div className='volume-knob-face'>
 					<button
 						className='volume-knob-button'
-						onClick={() => progress > 180 && setProgress(progress - 10)}
+						onClick={() => {
+							if (progress > 180) {
+								setProgress(progress - 10)
+								handleDecrement()
+							}
+						}}
 					>
 						<Icon width='10' src={minus} />
 					</button>
 					<Icon width='45' src={lines} />
 					<button
 						className='volume-knob-button'
-						onClick={() => progress < 540 && setProgress(progress + 10)}
+						onClick={() => {
+							if (progress < 540) {
+								setProgress(progress + 10)
+								handleIncrement()
+							}
+						}}
 					>
 						<Icon width='10' src={plus} />
 					</button>

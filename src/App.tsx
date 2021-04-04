@@ -6,15 +6,15 @@ import RightSection from './containers/RightSection'
 
 const App = () => {
 	return (
-		<div className='app'>
+		<div className='app container'>
 			<Row>
-				<Col xs='4'>
+				<Col lg='4'>
 					<LeftSection />
 				</Col>
-				<Col xs='4'>
+				<Col lg='4'>
 					<MiddleSection />
 				</Col>
-				<Col xs='4'>
+				<Col lg='4'>
 					<RightSection />
 				</Col>
 			</Row>

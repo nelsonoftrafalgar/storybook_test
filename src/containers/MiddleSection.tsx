@@ -2,18 +2,16 @@ import Button from '../components/Button'
 import ButtonToggle from '../components/ButtonToggle'
 import Colon from '../components/Colon'
 import Icon from '../components/Icon'
-import PercentIndicator from '../components/PercentIndicator'
 import ProgressBar from '../components/ProgressBar'
 import Text from '../components/Text'
 import TileWrapper from '../components/TileWrapper'
 import TrackIndicator from '../components/TrackIndicator'
-import VolumeKnob from '../components/VolumeKnob'
+import VolumeSettings from './VolumeSettings'
 import cloud from '../assets/icons/cloud.svg'
 import minus from '../assets/icons/minus.svg'
 import pause from '../assets/icons/pause.svg'
 import play from '../assets/icons/play.svg'
 import plus from '../assets/icons/plus.svg'
-import speaker from '../assets/icons/speaker.svg'
 
 const MiddleSection = () => {
 	return (
@@ -30,11 +28,7 @@ const MiddleSection = () => {
 					<Text text='Afterglow' color='light' size='l' weight='bold' classname='m-bottom-5' />
 					<Text text='Ambient Mix' color='light' size='s' weight='bold' />
 					<div className='d-flex align-items-center justify-content-end w-100 m-top-60'>
-						<VolumeKnob />
-						<div className='d-flex flex-column align-items-center m-left-20 m-right-40'>
-							<PercentIndicator percent='50' />
-							<Icon className='m-top-10' src={speaker} />
-						</div>
+						<VolumeSettings />
 					</div>
 					<div className='w-100 d-flex align-items-center justify-content-center m-top-60'>
 						<Text text='07:10' color='dark' size='s' weight='bold' classname='m-right-20' />

@@ -1,16 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/index.scss'
 
 import App from './App'
 import ReactDOM from 'react-dom'
-import {StrictMode} from 'react'
+import { StrictMode } from 'react'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  document.getElementById('root')
+	<StrictMode>
+		<App />
+	</StrictMode>,
+	document.getElementById('root-app')
 )
 
 // If you want to start measuring performance in your app, pass a function
