@@ -1,5 +1,5 @@
 import Colon from '../components/Colon'
-import EQSlider from '../components/EQSlider'
+import Equalizer from './Equalizer'
 import Icon from '../components/Icon'
 import Input from '../components/Input'
 import LightIndicator from '../components/LightIndicator'
@@ -14,6 +14,16 @@ import airPods from '../assets/icons/air_pods.svg'
 import marshall from '../assets/icons/marshall.svg'
 import phone from '../assets/icons/phone.svg'
 import sliders from '../assets/icons/sliders.svg'
+
+const equalizerData = [
+	{ max: 15, text: '60 Hz' },
+	{ max: 12, text: '120 Hz' },
+	{ max: 18, text: '400 Hz' },
+	{ max: 30, text: '2 Kz' },
+	{ max: 20, text: '4 Kz' },
+	{ max: 16, text: '8 Kz' },
+	{ max: 17, text: '16 Kz' },
+]
 
 const RightSection = () => {
 	return (
@@ -89,49 +99,11 @@ const RightSection = () => {
 					</div>
 				</div>
 			</TileWrapper>
-			<div className='m-top-40'>
-				<div className='d-flex'>
-					<TileWrapper gradient='dark' classname='w-auto'>
-						<div className='d-flex flex-column w-100 m-top-10 m-bottom-10 m-left-10 m-right-10'>
-							<div className='d-flex justify-content-center'>
-								<Text text='Equalizer' color='light' size='s' weight='bold' />
-							</div>
-							<div className='d-flex justify-content-between'>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={15} />
-									<Text text='60 Hz' color='dark' size='xs' weight='bold' />
-								</div>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={12} />
-									<Text text='120 Hz' color='dark' size='xs' weight='bold' />
-								</div>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={18} />
-									<Text text='400 Hz' color='dark' size='xs' weight='bold' />
-								</div>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={30} />
-									<Text text='2 Kz' color='dark' size='xs' weight='bold' />
-								</div>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={20} />
-									<Text text='4 Kz' color='dark' size='xs' weight='bold' />
-								</div>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={16} />
-									<Text text='8 Kz' color='dark' size='xs' weight='bold' />
-								</div>
-								<div className='d-flex flex-column align-items-center m-left-10 m-right-10'>
-									<EQSlider max={17} />
-									<Text text='16 Kz' color='dark' size='xs' weight='bold' />
-								</div>
-							</div>
-						</div>
-					</TileWrapper>
-					<TileWrapper classname='tile-sliders m-left-20'>
-						<Icon src={sliders} width='35' />
-					</TileWrapper>
-				</div>
+			<div className='m-top-40 d-flex'>
+				<Equalizer equalizerData={equalizerData} />
+				<TileWrapper classname='tile-sliders m-left-20'>
+					<Icon src={sliders} width='35' />
+				</TileWrapper>
 			</div>
 			<div className='m-top-40 m-bottom-40'>
 				<TileWrapper gradient='dark'>
