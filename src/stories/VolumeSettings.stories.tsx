@@ -7,7 +7,7 @@ export default {
 	component: VolumeSettings,
 } as Meta
 
-const Template: Story<any> = (args) => (
+const Template: Story = (args) => (
 	<div className='d-flex align-items-center justify-content-center w-100 m-top-60'>
 		<VolumeSettings {...args} />
 	</div>

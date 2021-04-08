@@ -7,7 +7,7 @@ export default {
 	component: VolumeSettingsSmall,
 } as Meta
 
-const Template: Story<any> = (args) => (
+const Template: Story = (args) => (
 	<div className='d-flex'>
 		<VolumeSettingsSmall {...args} />
 	</div>

@@ -10,9 +10,11 @@ export default {
 } as Meta
 
 const Template: Story<ITileWrapperProps> = (args) => (
-	<TileWrapper {...args}>
-		<Icon src={sliders} />
-	</TileWrapper>
+	<div style={{ width: '50px' }}>
+		<TileWrapper {...args}>
+			<Icon src={sliders} />
+		</TileWrapper>
+	</div>
 )
 
 export const Default = Template.bind({})
