@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import SoundSystem from '../containers/SoundSystem'
 
 export default {
-	title: 'SoundSystem',
+	title: 'Sound/SoundSystem',
 	component: SoundSystem,
 } as Meta
 
